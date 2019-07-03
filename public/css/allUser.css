@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+html, body {
+    height: 100%;
+}
+
+/* navbar start */
+.nav-item a{
+    color: aliceblue !important;
+    font-size: 17px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+    /* text-transform: capitalize; */
+    color: #fff !important;
+    opacity: 0.95;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* .navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: #fff !important;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+} */
+
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+    font-size: 19px !important
+}
+
+.navbar .collapse .navbar-nav .nav-item{
+    opacity: 0.7;
+}
+
+.navbar .collapse .navbar-nav .active{
+    /* color:#2c2c54 !important; */
+    /* border-bottom: #2c2c54 2px solid; */
+    /* font-weight: bold; */
+    color: #dff9fb !important;
+    font-size: 19px !important;
+    opacity: 1;
+    line-clamp: 64px
+}
+
+/* navbar end */
+
+/* bottom navbar */
+
+.botNav{
+    visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    background-color: #00d2d3;
+    width: 100%;
+    padding: 18px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;
+    /* opacity: 0.8; */
+}
+
+.botNav a{
+opacity: 0.5;
+transition: 0.6s
+}
+
+.botNav a i{
+font-size: 25px;
+color: #fff
+}
+
+.botNav .active{
+opacity: 1;
+}
+
+/* bottom navbar end */
+
+/* container flux */
+.container-flux{
+    margin-top:70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-between
+}
+
+.container-flux .userCard, .container-flux .pendingCard{
+    background-color:#00d2d3 !important;
+    width: 30%;
+    margin-bottom: 10%
+}
+
+.container-flux .pendingCard{
+    background-color: #00d2d3 !important
+}
+
+.userImg{
+    align-content: center;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    position: relative;top:-60px
+}
+.badge{
+    font-size: 15px;
+    border-radius:40px !important;
+    padding:10px 25px;
+    margin: -20% 0px 5% 0px !important;
+    background-color: #ff6b81;
+    color:#f1f2f6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.badge2{
+    background-color: #686de0 !important;
+}
+
+.badge img{
+    margin-right: 10px
+}
+
+.userName{
+    margin-top: 10px;
+    color:#ffffff;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.noMsj{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #e9ebee;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 20% ;
+    text-align: center;
+    font-family: 'Concert One', cursive;
+
+
+    
+}
+
+.noMsj h2{
+    font-size: 50px;
+}
+
+.noMsj i{
+    font-size: 50px;
+    margin-right: 10px
+}
+
+/* btn */
+.btn {
+    background-color: transparent;
+    border: 2px solid #40407a;
+    border-radius: 80em;
+    color: #40407a;
+    cursor: pointer;
+    line-height: 1;
+    margin: 20px;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover,.btn:focus{
+    color: #fff;
+    outline: 0;
+}
+
+.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover{
+    box-shadow: 0 0 40px 40px #40407a inset;
+}
+
+
+/* norequest  div*/
+
+.noRequest {
+    margin-top: 10px;
+    color:#ffffff;
+    font-family: 'Righteous', cursive;
+
+}
+
+.noRequestImg {
+    width: 320px;
+    height: 320px;
+}
+
+#chatDash{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0px;
+}
+
+
+
+#chatDash li{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#chatDash li:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#chatDash li span{
+    font-size: 18px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold
+}
+
+#chatDash img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 15px
+}
+
+
+/* float btn */
+.floatBtn{
+    background-color: #ff4757;
+    color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    width: 60px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s
+}
+
+.floatBtn a{
+    color: #fff !important;
+    text-decoration: none
+}
+
+.floatBtn a i{
+    font-size: 23px
+}
+
+.floatBtn:hover{
+background-color: #ff6b81
+}
+
+
+.imgDiv{
+    
+    background-color: #1CE0BD !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.imgDiv{
+    width:100%;
+    height:100%;
+    background:red;
+}
+
+
+.imgDiv img{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:0% auto;
+    align-items:center;
+}
+
+.settingDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0px;
+    text-align: center;
+}
+
+.settingDiv a{
+    font-size: 18px;
+    padding: 21px;
+    color: #fff;
+    background-color: #0abde3;
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 6px 6px -6px black;
+    border-radius: 4px;
+    transition: 0.6s
+}
+
+.settingDiv .profile {
+    background-color: #eb4d4b
+}
+.settingDiv .profile:hover{
+    background-color: #ff7979   
+}
+
+.settingDiv a:hover{
+    /* opacity: 0.8; */
+    background-color:#48dbfb
+}
+
+.profileDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #54a0ff;
+    margin: 10% auto 0% auto;
+    border-radius: 0px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 0 6px 9px -6px black;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.profileDiv img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 8%
+}
+.profileDiv h3{
+    margin-bottom: 8%
+}
+
+@media only screen and (max-width: 600px) {
+    .botNav{
+        visibility: visible
+    }
+    .navbar{
+        visibility: hidden
+    }
+    .navbar-brand{
+        font-size: 23px
+    }
+
+    .navbar-nav{
+        margin-top:8%
+    }
+
+    .navbar .collapse .navbar-nav .nav-item .active{
+        border-bottom: none;
+        color: #ff7979 !important;
+    }
+
+    .container-flux{
+        margin-top: 10px
+    }
+
+    .container-flux{
+        justify-content: center !important
+    }
+
+    .container-flux .userCard, .container-flux .pendingCard {
+        margin-bottom: 25% !important;
+        width: 90% !important;
+    }
+
+    .badge{
+        font-size: 13px
+    }
+
+    #chatDash{
+        margin-top: -60px !important;
+        margin-bottom: 20%
+    }
+    #chatDash span{
+        font-size: 14px !important
+    }
+
+    #chatDash img{
+        width: 70px;
+        height: 70px;
+    }
+
+/* no request div */
+    .noRequestImg{
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* float btn */
+    .floatBtn{
+        background-color: #ff6b81;
+        color: #fff;
+        bottom: 100px;
+    }
+
+    .noMsj{
+        margin-top: 70%
+    }
+
+    .noMsj h2{
+        font-size: 45px;
+    }
+    
+    .noMsj i{
+        font-size: 35px;
+        margin-right: 10px
+    }
+
+    .imgDiv{
+        padding: 5px 0px
+    }
+    .imgDiv img{
+        width:100%;
+        margin:50% auto;
+    }
+    .settingDiv a{
+        width: 230px;
+        padding: 14px
+    }
+
+    .profileDiv {
+        width: 80%
+    }
+
+}

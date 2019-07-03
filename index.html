@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '834307646925547');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=834307646925547&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#00d2d3">
+    <!-- iphone -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Chatme">
+    <meta name="application-name" content="Chatme">
+    <link rel="apple-touch-icon" sizes="192x192" href="../images/icons/icon-192x192.png">
+    <!-- ms application -->
+    <meta name="msapplication-TileColor" content="#00d2d3">
+    <meta name="msapplication-TileImage" content="../images/icons/icon-192x192.png">
+    <title>Chatme</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <!-- FAVICON ICON -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">  
+    <link rel="manifest" href="./manifest.json">
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="mainDiv">
+        <h2 class="navbar-brand" style="display: flex;align-items: center" href="JavaScript:void(0)"><i class="fab fa-codiepie"></i><span style="font-size:30px">HAT</span><span style="color:#ff6b81;font-size: 30px;display: flex;align-items: center"><span style="font-family: 'Ubuntu', sans-serif;">m</span><span>e</span></span></h2>
+    </div>
+
+    <br />
+    <div class="inputDiv">
+        <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="text" class="validate">
+            <label for="email">Email</label>
+        </div>
+        
+        <div class="input-field">
+            <i class="material-icons prefix">lock_open</i>
+            <input id="pwd" type="password" class="validate">
+            <label for="pwd">Password</label>
+        </div>
+        <br />
+    </div>
+
+    <div id='fontLoader'>
+            <i class="fas fa-spinner fa-spin" style="color:red"></i><span style="margin-left:10px;font-family: 'Ubuntu', sans-serif;font-weight: normal;color: #34495e">PLEASE WAIT...</span>
+    </div>
+
+    <div class="btnDiv">
+        <a href="javaScript:void(0)" class="waves-effect waves-light btn-large signIn" onClick="signin()">Log in</a>
+        <br />
+        <a href="javaScript:void(0)" class="waves-effect waves-light btn-large fb" onClick="fblogin()">Facebook</a>
+    </div>
+    <br />
+    <div class="span">
+        <span>Don't have account?<a href="javaScript:void(0)" onClick="checkNet('./pages/signup.html')"> create account</a></span>
+    </div>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./src/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 85%;
+    bottom: 50px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: -30px; opacity: 0;} 
+    to {bottom: 0px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: -30px; opacity: 0;}
+    to {bottom: 0px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 0px; opacity: 1;} 
+    to {bottom: -30px; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 0px; opacity: 1;}
+    to {bottom: -30px; opacity: 0;}
+  }
+
+
+  .reloadBtn{
+      background-color: transparent;
+      color: yellow;
+      float: right;
+      border: none;
+      font-weight: bold;
+      outline: none !
+  }
+  .reloadBtn:focus{
+      outline: none
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    #snackbar {
+        visibility: hidden;
+        width: 100%;
+        margin-left: 0%;
+        background-color: #343a40;
+        color: #fff;
+        border-radius: 2px;
+        text-align: left;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 0%;
+        bottom: 0px;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+      }
+  }

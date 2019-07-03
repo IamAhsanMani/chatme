@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#00d2d3">
+    <!-- iphone -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Chatme">
+    <meta name="application-name" content="Chatme">
+    <link rel="apple-touch-icon" sizes="192x192" href="../images/icons/icon-192x192.png">
+    <!-- ms application -->
+    <meta name="msapplication-TileColor" content="#00d2d3">
+    <meta name="msapplication-TileImage" content="../images/icons/icon-192x192.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/allUser.css">
+    <link rel="stylesheet" href="../css/toast.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- FAVICON ICON -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase.js"></script>
+    <title>Chatme</title>
+</head>
+<body>
+    <div class='imgDiv' id='loader'>
+        <img src="../images/load.gif" />
+    </div>
+    <div id='asd' style="display:none;padding: 0%;margin: 0%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#00d2d3 !important">
+      <a class="navbar-brand" href="javaScript:void(0)" style="display: flex;align-items: center" onClick="checkNet('./allUser.html')"><i class="fab fa-codiepie" style="padding-right:3px"></i><span style="font-size:25px;letter-spacing: 1px">HAT</span><span style="color:#ff6b81;font-size: 28px;display: flex;align-items: center"><span style="font-family: 'Ubuntu', sans-serif;">m</span><span>e</span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="javaScript:void(0)" onClick="checkNet('./allUser.html')"><i class="fas fa-home"></i> <span>Home</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="javaScript:void(0)" onClick="checkNet('./friend.html')"><i class="fas fa-user-friends"></i> <span>Friends</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javaScript:void(0)" onClick="checkNet('./pending.html')"><i class="fas fa-user-plus"></i> <span>Pending</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javaScript:void(0)" onClick="checkNet('./setting.html')"><i class="fas fa-cog"></i> <span>Setting</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="floatBtn">
+        <a href="javaScript:void(0)" onClick="checkNet('./chatDash.html')"><i class="far fa-comment"></i></a>
+      </div> -->
+
+      <div class="container-flux text-center" id="friend"></div>
+
+      </div>
+
+      <!-- bottom navbar -->
+      <div class="botNav">
+        <a href="javaScript:void(0)" onClick="checkNet('./allUser.html')"><i class="fas fa-home"></i></a>
+        <a href="javaScript:void(0)" onClick="checkNet('./friend.html')" class="active"><i class="fas fa-user-friends"></i></a>
+        <a href="javaScript:void(0)" onClick="checkNet('./pending.html')"><i class="fas fa-user-plus"></i></a>
+        <a href="javaScript:void(0)" onClick="checkNet('./setting.html')"><i class="fas fa-cog"></i></a>
+      </div>
+
+      <div id="snackbar"></div>
+      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+    <script src="../src/friend.js"></script>
+</body>
+</html>

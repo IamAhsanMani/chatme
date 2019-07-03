@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+
+html, body {
+    height: 100%;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 80% */
+}
+
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+    /* text-transform: capitalize; */
+    color:#00d2d3 !important;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.inputDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inputDiv .input-field{
+    margin-top: 5%
+}
+
+.btnDiv{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0% auto;
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 45px !important */
+}
+
+.span{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0% auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #34495e
+}
+
+.btnDiv .signIn{
+    background-color: #00d2d3
+}
+
+.btnDiv .signIn:hover,.btnDiv .signIn:focus{
+    background-color: #00d2d3
+}
+
+.btnDiv .fb{
+    background-color: #3b5998
+}
+
+.btnDiv .fb:hover,.btnDiv .fb:focus{
+    background-color: #3b5998 !important
+}
+
+
+/* label color */
+.input-field label {
+    color: #aaa !important;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label {
+    color: #00d2d3 !important;
+  }
+
+  .input-field .prefix{
+      color: #34495e
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus,
+  .input-field input[type=password]:focus{
+    border-bottom: 1px solid #00d2d3 !important;
+    box-shadow: 0 1px 0 0 #00d2d3 !important;
+  }
+  /* valid color */
+  .input-field input[type=text].valid,.input-field input[type=password].valid {
+    border-bottom: 1px solid #00d2d3 !important;
+    box-shadow: 0 1px 0 0 #00d2d3 !important;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #00d2d3 !important;
+    box-shadow: 0 1px 0 0 #00d2d3 !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #00d2d3 !important;
+  }
+
+  .file-field .btn{
+      background-color: #34495e;
+    }
+
+    .file-field .btn:hover{
+        background-color: #00d2d3 !important; 
+    }
+
+    .imgDiv{
+        /* visibility:; */
+        background-color: #1CE0BD !important;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .imgDiv{
+        width:100%;
+        height:100%;
+        background:red;
+    }
+    
+
+    .imgDiv img{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        margin:0% auto;
+        align-items:center;
+    }
+
+    #fontLoader{
+        visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 17px
+    }
+
+
+@media only screen and (max-width: 600px) {
+    .btnDiv{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0% auto;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .span{
+        font-size: 12px
+    }
+    .imgDiv{
+        padding: 5px 0px
+    }
+    .imgDiv img{
+        width:100%;
+        margin:50% auto;
+    }
+}

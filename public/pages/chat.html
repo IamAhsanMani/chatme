@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#00d2d3">
+    <!-- iphone -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Chatme">
+    <meta name="application-name" content="Chatme">
+    <link rel="apple-touch-icon" sizes="192x192" href="../images/icons/icon-192x192.png">
+    <!-- ms application -->
+    <meta name="msapplication-TileColor" content="#00d2d3">
+    <meta name="msapplication-TileImage" content="../images/icons/icon-192x192.png">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../css/toast.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase.js"></script>
+    <script src="../src/moment.js"></script>
+    <!-- FAVICON ICON -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+
+    <title>Chatme</title>
+</head>
+<body>
+    <div class="chat_window" style="">
+    <header class="chatHeader">
+        <a href="javascript:void(0)" onClick="checkNet('./chatDash.html')"><i class="fas fa-arrow-left"></i></a>
+
+        <img id="userImg" />
+        <a href="JavaScript:void(0)"><span id="userName"></span></a>
+    </header>
+
+    <ul class="messages" id="msjDiv">
+            <div id='msjLoading'> 
+              <p>loading...</p>
+            </div>
+    </ul>
+    <div class="floatBtn">
+      <a id='mm' href="JavaScript:void(0)" onClick='btnToTop()'><i class="fas fa-arrow-down"></i></a>
+    </div>
+
+    <div id="footer">
+        <textarea id="input" autofocus placeholder="type you message..." rows="1"></textarea>
+        <a class="sendMsj" href="JavaScript:void(0)" onClick='sendMsj(this)'><i class="fas fa-arrow-circle-right sendBtn"></i></a>
+    </div>
+    
+</div>
+
+      <div id="snackbar"></div>
+    
+    <script src="../src/chat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  
+    <script>
+    var iScrollPos = 0;
+
+    $('#msjDiv').scroll(function () {
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+        console.log('down')
+        document.getElementById('mm').style.display = 'none'
+    } else {
+        console.log('up')
+        document.getElementById('mm').style.display = 'block'
+    }
+    iScrollPos = iCurScrollPos;
+});
+ 
+var textarea = document.getElementById('input')
+
+textarea.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      event.preventDefault();
+        document.getElementsByClassName("sendMsj")[0].click();
+        setTimeout(function(){
+    // textarea.style.cssText = 'height:auto; padding:0';
+    // for box-sizing other than "content-box" use:
+    // el.style.cssText = '-webkit-box-sizing:content-box';
+        textarea.style.cssText = 'height: + 0px;padding: 15px';
+  },0);
+        // autosize()
+    }
+});
+  </script>
+</body>
+</html>
